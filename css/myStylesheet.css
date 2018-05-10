@@ -1,0 +1,123 @@
+:root {
+  font-size: 20px; 
+}
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: black;
+}
+.parent-container{
+	margin: 0px;
+}
+.sections{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.parent-container .sections{
+	height: auto;	
+	width: 94vw;
+	text-align: center;
+	border: solid 1px;
+	border-radius: 20px;
+	margin: 2vh auto ;
+	
+}
+.heading{
+	font-family: 'Dosis ', sans-serif;
+	font-size: 2rem;
+	color: white;
+	padding: 7vh;
+}
+.description{
+
+	font-family: "Istok Web", sans-serif;
+	color: white;
+	font-size: 1rem;
+	margin-top: 2vh;
+	padding: 2vh;
+}
+.about-me{
+	text-align: left;
+}
+.technology{
+	font-size: 1rem;
+}
+.highlight{
+	color: black;
+	background-color: #ffa305;	
+	line-height: 1.8rem;
+}
+.highlight .words{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1rem;
+}
+
+.block{
+	  display: flex;
+	  flex-direction: row;
+	}
+.image{
+    border: solid #ffa305;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 20px 2px #2c2c2c;
+    width: 25vw;
+    transition: box-shadow 0.3s linear 0.1s;
+  }
+  .image:hover{
+  	cursor: pointer;
+     box-shadow: 0 3px 20px 0 #ffa305;
+  }
+  .box{
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+  	}
+  .child-box{
+  	justify-content: space-around;
+  	width: 40vh;
+  	border:solid white;
+  	border-radius: 10px;
+  	margin: 3vh;
+  	height: 58vh;
+	  	
+  }
+ .icon{
+  	width: 30vh;
+  	height: 30vh;
+  	margin: 4vh;
+  	border:solid white;
+  	border-radius: 10px;
+  	letter-spacing: 0px;
+  }
+
+.about-me-container{
+	background-color: black;
+}
+.technology-container{
+	background-color: #6a6d68;
+}
+.experience-container{
+	background-color: #ff1e5e;
+}
+.experience-container .description{
+	text-align: left;
+}
+.poject-container{
+	background-color: #104e5e;
+}
+@media only screen and (max-width: 725px) {
+	.block{
+	    flex-direction: column;
+	}
+	.my-image{
+		order: -1;
+	}
+	.image{
+		width: 60vw;
+	}
+	.child-box{
+		flex-direction: column;
+
+	}
+} 
